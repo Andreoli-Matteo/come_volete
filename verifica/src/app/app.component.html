@@ -1,5 +1,6 @@
-<input type="number"> : <label>Numero</label><br>
+<input type="number" #num> : <label>Numero</label><br>
 <div>
-    <button>+</button>
-    <button>-</button>
+    <button (click)="somma(num)">+</button>
+    <button (click)="sottrazione(num)">-</button>
 </div>
+<app-cont [numero]="numero1"></app-cont>
